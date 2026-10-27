@@ -66,28 +66,7 @@ def cmd_validate(args):
     with open(args.data, encoding="utf-8") as fh:
         data = json.load(fh)
 
-    problems = []
-
-    def check(field_desc, dic, value):
-        if not value:
-            return
-        if ref.get_item(dic, code=str(value)) is None:
-            problems.append(f"{field_desc}: значение «{value}» отсутствует в справочнике {dic}")
-
-    check("currency_okoei", "okei", data.get("currency_okoei"))
-    check("oktmo", "budgets", data.get("oktmo"))
-    check("admin_chapter", "budgets", data.get("admin_chapter"))
-
-    for i, it in enumerate(data.get("items", []), 1):
-        check(f"items[{i}].code", "okonm", it.get("code"))
-        check(f"items[{i}].country_code", "countries", it.get("country_code"))
-        check(f"items[{i}].okei", "okei", it.get("okei"))
-        vat = str(it.get("vat_rate", "")).replace("%", "").strip()
-        if vat and ref.get_item("vat", code=vat) is None:
-            problems.append(f"items[{i}].vat_rate: ставка «{it['vat_rate']}» не из справочника vat")
-
-    pkg = data.get("packaging", {})
-    check("packaging.unit_okoei", "okei", pkg.get("unit_okoei"))
+    problems = ref.validate_data(data)
 
     if problems:
         print("Обнаружены расхождения со справочниками:")
