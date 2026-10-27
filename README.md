@@ -68,3 +68,34 @@ python dict_cli.py get countries --code 643    # страна по коду ОК
 python dict_cli.py fields                      # поле формы -> справочник
 python dict_cli.py validate sample_data.json   # сверка данных со справочниками
 ```
+
+## Выгрузка данных (экспорт проекта)
+
+Удалённый Git-репозиторий для этого проекта не настроен, поэтому данные выгружаются
+в переносимые файлы. Выполнено и проверено:
+
+1. **Git-bundle** — полный репозиторий одним файлом (все ветки и история):
+   - файл: `act-0510452.bundle` (~190 КБ, `git bundle verify` — okay);
+   - использование на другой машине:
+     ```bash
+     git clone act-0510452.bundle мой-проект      # клон из bundle
+     # или в существующий репозиторий:
+     git fetch act-0510452.bundle main:imported-main
+     ```
+
+2. **Снимок кода** — архив всех исходников без `.git`, `build/`, `dist/`:
+   - файл: `act-0510452-snapshot.tar.gz`;
+   - распаковка: `tar -xzf act-0510452-snapshot.tar.gz`.
+
+### Выгрузка в удалённый репозиторий (когда он появится)
+
+```bash
+git remote add origin <URL-репозитория>   # например https://github.com/user/act-0510452.git
+git push -u origin HEAD                   # текущая ветка
+git push origin main                      # основная ветка
+# либо зеркальная выгрузка всех ссылок:
+git push --mirror <URL-репозитория>
+```
+
+Правила `.gitignore` исключают артефакты экспорта (`*.bundle`, снимок) и сборки
+(`build/`, `dist/`) из истории коммитов.
