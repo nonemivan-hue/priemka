@@ -23,6 +23,19 @@ import openpyxl
 
 TEMPLATE_FILE = "LAW_7445.attach_LAW_497176_1.XLSX"
 
+
+def lookup(dic, code=None, name_=None, group=None):
+    """Опциональная сверка значения со справочником (dictionaries/reference.py).
+
+    Возвращает найденный элемент или None (справочники не обязательны для
+    заполнения — это подсказки форматчику).
+    """
+    try:
+        from dictionaries import reference as ref
+    except ImportError:
+        return None
+    return ref.get_item(dic, code=code, name_=name_, group=group)
+
 # ---------------------------------------------------------------------------
 # Пример данных для заполнения (можно заменить своим JSON-файлом через -d)
 # ---------------------------------------------------------------------------
