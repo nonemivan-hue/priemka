@@ -3,3 +3,6 @@ __pycache__/
 build/
 dist/
 *.spec
+# export bundles/snapshots
+*.bundle
+act-0510452-snapshot.tar.gz
