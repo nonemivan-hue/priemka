@@ -1,0 +1,281 @@
+{
+  "act_number": "1",
+  "date_accept": {
+    "dd": "28",
+    "mm": "10",
+    "yyyy": "2026"
+  },
+  "amount_words": "Двести тридцать тысяч рублей 00 копеек",
+  "approved_head": {
+    "position": "Директор",
+    "signature": "",
+    "fio": "Иванов И.И.",
+    "date": {
+      "dd": "28",
+      "mm": "10",
+      "yyyy": "2026"
+    }
+  },
+  "accepted_head": {
+    "position": "Главный бухгалтер",
+    "signature": "",
+    "fio": "Петрова А.С.",
+    "date": {
+      "dd": "28",
+      "mm": "10",
+      "yyyy": "2026"
+    }
+  },
+  "institution": "Государственное бюджетное учреждение города Москвы «Пример»",
+  "branch": "",
+  "subdivision": "Отдел материально-технического обеспечения",
+  "admin_name": "Департамент здравоохранения города Москвы",
+  "admin_chapter": "0900",
+  "budget_name": "Бюджет города Москвы",
+  "currency_name": "Российский рубль",
+  "currency_okoei": "643",
+  "recipient_address": "123456, г. Москва, ул. Примерная, д. 1",
+  "payment_doc_number": "12345",
+  "payment_doc_date": "15.10.2026",
+  "customer_full": "ГБУЗ «Пример»",
+  "customer_ogrn": "1027700000001",
+  "customer_inn": "7700000001",
+  "customer_kpp": "770001001",
+  "customer_ls": "01770000000",
+  "customer_section": "1",
+  "supplier_ls": "",
+  "supplier_section": "",
+  "oktmo": "45329000",
+  "svod_reestr_receiver": "0010900001",
+  "payment_doc_text": "Соглашение о поставке от 01.10.2026 № 12-П",
+  "commission_doc_text": "Приказ по учреждению о создании приемочной комиссии",
+  "accept_basis_text": "Государственный контракт от 05.10.2026 № 01772000012-26",
+  "shipment_doc_text": "Товарная накладная",
+  "customer_address": "123456, г. Москва, ул. Примерная, д. 1",
+  "delivery_place": "Склад получателя: г. Москва, ул. Складская, д. 2",
+  "commission_doc_number": "45-к",
+  "commission_doc_date": "01.10.2026",
+  "accept_basis_number": "КС-2",
+  "accept_basis_date": "27.10.2026",
+  "igk": "221134567890123456789012345678901234",
+  "shipment_doc_number": "НК-000123",
+  "shipment_doc_date": "25.10.2026",
+  "other_doc_number": "",
+  "other_doc_date": "",
+  "suppliers": {
+    "supplier": [
+      "ООО «Ромашка»",
+      "ООО «Ромашка»",
+      "111111, г. Москва, ул. Поставщиков, д. 5",
+      "1027700000002",
+      "7701000001",
+      "770101001",
+      "",
+      ""
+    ],
+    "shipper": [
+      "ООО «Логистик»",
+      "ООО «Логистик»",
+      "122222, г. Москва, ул. Логистическая, д. 3",
+      "1037700000003",
+      "7702000002",
+      "770202001",
+      "",
+      ""
+    ],
+    "insurer": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "transport": {
+    "send_date": "24.10.2026",
+    "send_time": "09:00",
+    "arrive_date": "25.10.2026",
+    "arrive_time": "18:30",
+    "issue_date": "25.10.2026",
+    "issue_time": "19:00",
+    "open_date": "26.10.2026",
+    "open_time": "08:30",
+    "deliver_date": "26.10.2026",
+    "deliver_time": "09:00",
+    "accept_start": "09:15",
+    "accept_end": "10:45",
+    "place": "г. Москва, ул. Складская, д. 2"
+  },
+  "packaging": {
+    "seals": "Пломбы целы",
+    "package_type": "Гофрокороб",
+    "package_state": "Не повреждена",
+    "unit_name": "штука",
+    "unit_okoei": "796",
+    "measure_method": "Счет мест",
+    "places": "10",
+    "mass_from": "1,2",
+    "mass_to": "1,2",
+    "marked_goods": "Монитор 24\"",
+    "storage": "Сухой отапливаемый склад"
+  },
+  "supplier_rep_pre": {
+    "position": "Менеджер",
+    "fio": "Сидоров В.В.",
+    "date": {
+      "dd": "28",
+      "mm": "10",
+      "yyyy": "2026"
+    }
+  },
+  "accepted_by_pre": {
+    "position": "Заведующий складом",
+    "fio": "Кузнецова М.П.",
+    "date": {
+      "dd": "28",
+      "mm": "10",
+      "yyyy": "2026"
+    }
+  },
+  "items": [
+    {
+      "code": "32.50.50.190",
+      "name": "Монитор 24 дюйма",
+      "country_code": "643",
+      "country_name": "Россия",
+      "okei": "796",
+      "okei_cond": "шт",
+      "qty_doc": 10,
+      "price": 15000,
+      "no_vat": 150000,
+      "vat_rate": "20%",
+      "vat": 30000,
+      "with_vat": 180000,
+      "decl": "",
+      "cert": "",
+      "fact_qty": 10,
+      "fact_bad": ""
+    },
+    {
+      "code": "32.50.50.190",
+      "name": "Клавиатура USB",
+      "country_code": "156",
+      "country_name": "Китай",
+      "okei": "796",
+      "okei_cond": "шт",
+      "qty_doc": 10,
+      "price": 5000,
+      "no_vat": 50000,
+      "vat_rate": "20%",
+      "vat": 10000,
+      "with_vat": 60000,
+      "decl": "1000000/251026/0000001",
+      "cert": "ТС № RU C-RU.АЕ87.Б.00123",
+      "fact_qty": 10,
+      "fact_bad": ""
+    }
+  ],
+  "discrepancies": [
+    {
+      "code": "",
+      "name": "",
+      "total_qty": 1,
+      "total_sum": 5000,
+      "short_qty": 1,
+      "short_sum": 5000,
+      "extra_qty": "",
+      "extra_sum": "",
+      "defect_qty": "",
+      "defect_sum": "",
+      "country_code": "",
+      "country_name": "",
+      "decl": "",
+      "specs": "",
+      "other": ""
+    }
+  ],
+  "smr_present": false,
+  "smr": {
+    "period_from": "01.09.2026",
+    "period_to": "28.10.2026",
+    "construction": "Стройка-1",
+    "object": "Объект: капремонт кровли",
+    "object_uid": "77-1-2345678901",
+    "works": [],
+    "costs": [],
+    "costs_total": "",
+    "costs_vat": "",
+    "costs_with_vat": ""
+  },
+  "attachments": [
+    {
+      "number": "1",
+      "name": "Товарная накладная НК-000123",
+      "file": "nk_000123.pdf"
+    },
+    {
+      "number": "2",
+      "name": "Универсальный передаточный документ",
+      "file": "upd_000123.pdf"
+    }
+  ],
+  "chairman": {
+    "position": "Начальник отдела",
+    "fio": "Смирнов Д.А."
+  },
+  "members": [
+    {
+      "position": "Ст. бухгалтер",
+      "fio": "Орлова Е.Н."
+    },
+    {
+      "position": "Юрист",
+      "fio": "Морозов П.П."
+    },
+    {
+      "position": "Зав. складом",
+      "fio": "Кузнецова М.П."
+    }
+  ],
+  "executor": {
+    "position": "Юрист",
+    "fio": "Морозов П.П.",
+    "phone": "+7(495)123-45-67",
+    "email": "example@mail.ru"
+  },
+  "supplier_rep": {
+    "position": "Менеджер",
+    "fio": "Сидоров В.В.",
+    "date": {
+      "dd": "28",
+      "mm": "10",
+      "yyyy": "2026"
+    }
+  },
+  "accepted_by": {
+    "position": "Заведующий складом",
+    "fio": "Кузнецова М.П.",
+    "date": {
+      "dd": "28",
+      "mm": "10",
+      "yyyy": "2026"
+    }
+  },
+  "customer_rep": {
+    "position": "Начальник хозотдела",
+    "fio": "Федоров И.И.",
+    "date": {
+      "dd": "28",
+      "mm": "10",
+      "yyyy": "2026"
+    }
+  },
+  "build_control_rep": {
+    "position": "",
+    "fio": "",
+    "date": null
+  }
+}
