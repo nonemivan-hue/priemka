@@ -21,14 +21,25 @@
 import json
 import os
 import re
+import sys
 import unicodedata
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-JSON_DIR = os.path.join(BASE_DIR, "json")
 
-# Совместимость: словари могут лежать и в dictionaries/data (устаревший вариант)
-if not os.path.isdir(JSON_DIR):
-    JSON_DIR = os.path.join(BASE_DIR, "data")
+# Запуск из собранного EXE (PyInstaller --onefile): исходных модулей нет,
+# но рядом с исполняемым файлом лежат скопированные dictionaries/json/*.json.
+# В этом режиме BASE_DIR указываем на папку EXE, JSON_DIR — на словари в ней.
+if getattr(sys, "frozen", False):
+    BASE_DIR = os.path.dirname(os.path.abspath(sys.argv[0]))
+    JSON_DIR = os.path.join(BASE_DIR, "dictionaries", "json")
+else:
+    JSON_DIR = os.path.join(BASE_DIR, "json")
+
+    # Совместимость: словари могут лежать и в dictionaries/data (устаревший вариант)
+    if not os.path.isdir(JSON_DIR):
+        _alt = os.path.join(BASE_DIR, "data")
+        if os.path.isdir(_alt):
+            JSON_DIR = _alt
 
 _CACHE = {}
 
